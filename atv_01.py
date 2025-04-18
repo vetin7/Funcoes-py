@@ -1,46 +1,35 @@
-''' Crie funções para soma, subtração, multiplicação e divisão.
-Faça um programa que peça dois números e mostre o resultado da
-operação escolhida. '''
+def soma(num1, num2):
+    soma = num1 + num2
+    return soma
 
-def soma(n1, n2):
-    adicao = n1 + n2
-    return adicao
-
-def sub(n1, n2):
-   subtracao = n1 - n2
+def sub(num1, num2):
+   subtracao = num1 - num2
    return subtracao
 
-def mult(n1, n2):
-   vezes = n1 * n2
-   return vezes
+def mult(num1, num2):
+   mult = num1 * num2
+   return mult
 
-def div(n1, n2):
-   divisao = n1 // n2
+def div(num1, num2):
+   divisao = num1 // num2
    return divisao
     
-n1 = int(input("Diga o primeiro numero: "))
-n2 = int(input("Diga o segundo numero: "))
+num1 = int(input("Diga o primeiro numero: "))
+num2 = int(input("Diga o segundo numero: "))
 operacao = input("Diga a operacao a ser feita: ")
 
-s = soma(n1, n2)
-
-t = sub(n1, n2)
-
-v = mult(n1, n2)
-
-d = div(n1, n2)
+so = soma(num1, num2)
+sub = sub(num1, num2)
+mul = mult(num1, num2)
+div = div(num1, num2)
 
 if operacao == "soma":
- print(f"A soma entre {n1} e {n2} é {s}.") 
-
+ print(f"A soma entre {num1} e {num2} é {so}.") 
 elif operacao == "subtracao":
-   print(f"A subtracao entre {n1} e {n2} é {t}.")
-
+   print(f"A subtracao entre {num1} e {num2} é {sub}.")
 elif operacao == "multiplicacao":
-   print(f"A multiplicacao entre {n1} e {n2} é {v}.")
-
+   print(f"A multiplicacao entre {num1} e {num2} é {mul}.")
 elif operacao == "divisao":
-   print(f"A divisao entre {n1} e {n2} é {d}.")
-
+   print(f"A divisao entre {num1} e {num2} é {div}.")
 else:
    print("Erro, operação invalida.")
